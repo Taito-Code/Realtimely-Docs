@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Realtime User Action
 
-最後にもっとも柔軟で有用な関数`useRealtimeUserAction`を紹介する。
+最後にもっとも柔軟で有用な関数`useRealtimeUserAction`を紹介します。
 
 ```tsx
 export default () => {
@@ -29,4 +29,4 @@ export default () => {
 }
 ```
 
-`useRealtimeUserAction`の引数にcallback関数を渡して実行することでユーザアクションの監視が開始される。ボタンが押されるたびに返り値の`pushUserAction`を実行することでイベントが発行され、callback関数が実行される。よって、押されたボタンの番号がconsole.logで標準出力されることを確認できるだろう。
+`useRealtimeUserAction`の引数にcallback関数を渡して実行することでユーザアクションの監視が開始されます。ボタンが押されるたびに返り値の`pushUserAction`を実行することでイベントが発行され、callback関数が実行されます。よって、押されたボタンの番号がconsole.logで標準出力されることを確認できるでしょう。
