@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'Realtimely Docs',
   tagline: 'Make your site more realtimely',
-  url: 'https://example.com',
-  baseUrl: '/',
+  url: 'https://kitaharamugiro.github.io',
+  baseUrl: '/Realtimely/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -22,7 +22,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://example.com',
+          editUrl: 'https://github.com/KitaharaMugiro/Realtimely-Docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -34,6 +34,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark'
+      },
       navbar: {
         title: 'Realtimely',
         logo: {
@@ -48,8 +51,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'Docs',
           },
           {
-            href: 'https://example.com',
+            href: 'https://github.com/KitaharaMugiro/Realtimely',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://www.npmjs.com/package/realtimely',
+            label: 'npm',
             position: 'right',
           },
         ],
@@ -76,7 +84,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
               {
                 label: 'GitHub',
-                href: 'https://example.com',
+                href: 'https://github.com/KitaharaMugiro/Realtimely',
+              },
+              {
+                label: 'npm',
+                href: 'https://www.npmjs.com/package/realtimely',
               },
             ],
           },
