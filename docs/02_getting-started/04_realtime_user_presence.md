@@ -6,7 +6,7 @@ sidebar_position: 4
 ![demo](/img/realtime-header.gif)
 
 ## Example
-`useOnlineUsers`関数を呼び出すだけでそのURL(パスも含む)を閲覧しているユーザのリストの監視を開始し、更新されるとonlineUserListに反映される。
+`useOnlineUsers`関数を呼び出すだけでそのURL(パスも含む)を閲覧しているユーザのリストの監視を開始し、更新されるとonlineUserListに反映されます。
 
 ```tsx title="header.tsx"
 import UserList from "./UserList";
@@ -32,5 +32,5 @@ export default () => {
 }
 ```
 
-詳しい実装は[Github](https://github.dev/KitaharaMugiro/realtime-cursor/blob/main/components/RealtimeHeader.tsx)で確認
+詳しい実装は[Github](https://github.dev/KitaharaMugiro/realtime-cursor/blob/main/components/RealtimeHeader.tsx)で確認してください。
 

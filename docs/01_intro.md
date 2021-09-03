@@ -9,6 +9,8 @@ Realtimelyは、あなたのReactアプリに簡単に楽しいリアルタイ�
 Realtimelyの裏側ではGraphQLとWebsocketでクラウドと通信しますが、ユーザはそれを意識せずにRealtimelyの提供するhooks関数を使うだけでwebsocketベースのリアルタイムな体験を実装することができるようになります。
 
 ## For Example
+![demo](/img/realtime-cursor.gif)
+
 最もシンプルで分かりやすいのが「Realtime Cursor」です。
 Realtimelyが提供する`useRealtimeCursor`を使って以下のようなコンポーネントを作成するだけで、あなたのWebアプリを利用する全ての人のマウスカーソルの動きをリアルタイムに共有できるようになります。
 
@@ -25,10 +27,9 @@ export default () => {
 }
 ```
 
-![demo](/img/realtime-cursor.gif)
 
 ## What you can do
-Realtimelyは`useRealtimeUserAction`というより使いやすくて応用範囲の広い関数も容易しています。以下のシンプルなコードをご覧ください。
+Realtimelyは`useRealtimeUserAction`というより使いやすくて応用範囲の広い関数も用意しています。以下のシンプルなコードをご覧ください。
 
 ```tsx
 import { useRealtimeUserAction } from 'realtimely';

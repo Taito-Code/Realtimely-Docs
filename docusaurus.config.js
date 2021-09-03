@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
   title: 'Realtimely Docs',
-  tagline: 'Make your site more realtimely',
+  tagline: 'Make your react app look more real-time',
   url: 'https://kitaharamugiro.github.io',
   baseUrl: '/Realtimely/',
   onBrokenLinks: 'throw',
@@ -49,6 +49,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             docId: 'intro',
             position: 'left',
             label: 'Docs',
+          },
+          {
+            type: 'doc',
+            docId: 'getting-started/demo',
+            position: 'left',
+            label: 'Example',
           },
           {
             href: 'https://github.com/KitaharaMugiro/Realtimely',
