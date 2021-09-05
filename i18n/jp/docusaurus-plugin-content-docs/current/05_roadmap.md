@@ -6,11 +6,11 @@ sidebar_position: 5
 
 RealtimelyはProductionで使えるようにするために多くの課題を残しており、短期的にはその解決に注力します。
 その部分の解決ができたら、
-・バックエンドをユーザが保有するAWSクラウドで構築できるオプションを実装
-・もしくは、さらに汎用的に利用できるような機能開発
+* バックエンドをユーザが保有するAWSクラウドで構築できるオプションを実装
+* もしくは、さらに汎用的に利用できるような機能開発
 を行っていく予定です。
 これについては需要に応じてどちらを優先するか検討しようと思っています。
 
 # Donation
-Realtimelyの拡充はユーザの需要と金銭的支援によって加速します。
-もし少しでも気に入っていただけましたらDonationをお願いいたします。
+Realtimely expansion will be accelerated by user demand and financial support.
+If you like it even a little, please donate.
