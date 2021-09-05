@@ -6,7 +6,7 @@ sidebar_position: 4
 ![demo](/img/realtime-header.gif)
 
 ## Example
-Just call the `useOnlineUsers` function to start monitoring the list of users who are viewing the URL (including the path), and when it is updated, it will be reflected in the onlineUserList.
+`useOnlineUsers`関数を呼び出すだけでそのURL(パスも含む)を閲覧しているユーザのリストの監視を開始し、更新されるとonlineUserListに反映されます。
 
 ```tsx title="header.tsx"
 import UserList from "./UserList";
@@ -32,4 +32,5 @@ export default () => {
 }
 ```
 
-Check [Github](https://github.dev/KitaharaMugiro/realtime-cursor/blob/main/components/RealtimeHeader.tsx) for the detailed implementation.
+詳しい実装は[Github](https://github.dev/KitaharaMugiro/realtime-cursor/blob/main/components/RealtimeHeader.tsx)で確認してください。
+

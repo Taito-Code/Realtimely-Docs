@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Realtime User Action
 
-Finally, I would like to introduce the most flexible and useful function `useRealtimeUserAction`.
+最後にもっとも柔軟で有用な関数`useRealtimeUserAction`を紹介します。
 
 ```tsx
 export default () => {
@@ -29,4 +29,4 @@ export default () => {
 }
 ```
 
-User action monitoring is started by passing the callback function to the argument of `useRealtimeUserAction` and executing it. By executing the return value `pushUserAction` each time the button is pressed, an event is issued and the callback function is executed. Therefore, you can see that the number of the pressed button is output as standard in console.log.
+`useRealtimeUserAction`の引数にcallback関数を渡して実行することでユーザアクションの監視が開始されます。ボタンが押されるたびに返り値の`pushUserAction`を実行することでイベントが発行され、callback関数が実行されます。よって、押されたボタンの番号がconsole.logで標準出力されることを確認できるでしょう。

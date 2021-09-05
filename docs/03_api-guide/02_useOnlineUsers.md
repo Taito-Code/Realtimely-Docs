@@ -3,17 +3,17 @@ sidebar_position: 2
 ---
 
 # useOnlineUsers
-本メソッドが実施することは以下になります
+What this method does is:
 
-* 5000msのインターバルで、URL, ユーザ情報(ランダムに振られた名前、アバター、色)をサーバに送ります
-* WebSocketでサーバ上で同一のURLに該当する他のユーザの情報が追加された場合、それを取得します
-* 他のユーザの情報をまとめてリストで保持します
+* Send URL, user information (randomly assigned name, avatar, color) to the server at intervals of 5000ms
+* If the information of another user corresponding to the same URL is added on the server by WebSocket, it will be acquired.
+* Keeps other users' information together in a list
 
-本メソッドは１つの関数を返します。
+This method returns one function.
 * `onlineUserList`
 
 ## onlineUserList
-`onlineUserList`は以下のようなオブジェクトのリストになります。
+`onlineUserList` is a list of objects like the one below.
 
 ```ts
 {
@@ -25,12 +25,13 @@ sidebar_position: 2
 }
 ```
 
-keyはユーザごとに固有の値
-name, avator, colorはそのユーザに決められたランダムな値です。
-deleteTimeはサーバで設定された未来の時刻になります。
+key is a unique value for each user
+name, avator, color are random values determined by the user.
+deleteTime will be the future time set on the server.
 
 ## delete time
-ユーザがオフラインになると、サーバへデータが送られなくなります。
-各データにはサーバで振り分けたdelete timeが設定されており、`onlineUserList`ではdelete timeを超えたデータは取り除ぞかれています。
-delete timeは１０秒で固定しております。
-この設定値を変えたい場合は、[自分でバックエンドを構築する](/how-it-works/self-backend)を参照ください。
+
+When the user goes offline, no data is sent to the server.
+The delete time assigned by the server is set for each data, and `useRealtimeCursor` removes the data that exceeds the delete time.
+The delete time is fixed at 10 seconds.
+If you want to change this setting, see [Build your own backend](/docs/how-it-works/self-backend).

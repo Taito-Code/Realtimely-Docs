@@ -4,16 +4,16 @@ sidebar_position: 2
 
 
 # Self hosted Backend
-[Architecture](/docs/how-it-works/architecture)で説明したように、RealtimelyはAWSと接続を行います。
-現在のバージョンでは、RealtimelyのAppSyncと接続するオプションしか用意されておらず、次のようなリスクがあります。
+Realtimely connects to AWS, as described in [Architecture](/docs/how-it-works/architecture).
+The current version only offers the option to connect with Realtimely's AppSync and has the following risks:
 
-* ランダムに生成されたユーザ情報と、そのユーザのアクションがあなたが管理しないサーバに送信され、一時的にDBに反映されます。
-* Realtimelyがサービスを停止し、AppSyncエンドポイントおよびデータベースを破棄すると、このライブラリは動作しなくなります。
+* Randomly generated user information and the user's actions are sent to a server that you do not manage and are temporarily reflected in the DB.
+* If Realtimely goes out of service and destroys the AppSync endpoint and database, this library will stop working.
 
 
 :::caution
 
-よって現在のバージョンのRealtimelyはProduction Readyとは言えず、PoCレベルでの活用に留めることをお勧めします。
+Therefore, the current version of Realtimely is not Production Ready, and we recommend that you use it only at the PoC level.
 
 :::
 
@@ -21,8 +21,8 @@ sidebar_position: 2
 
 :::caution
 
-現在のバージョンでは、あなたのAWS環境に同等のバックエンドを構築し、URLエンドポイントを切り替えるオプションはありません。
+In the current version, you don't have the option to build an equivalent backend in your AWS environment and switch URL endpoints.
 
 :::
 
-実装のスケジュールについては[ロードマップ](/docs/roadmap)をご覧ください。
+See [Roadmap](/docs/roadmap) for implementation schedules.

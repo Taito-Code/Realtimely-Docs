@@ -5,14 +5,14 @@ sidebar_position: 1
 # Introduction
 
 ## What is Realtimely?
-Realtimelyは、あなたのReactアプリに簡単に楽しいリアルタイム要素を導入することができます。
-Realtimelyの裏側ではGraphQLとWebsocketでクラウドと通信しますが、ユーザはそれを意識せずにRealtimelyの提供するhooks関数を使うだけでwebsocketベースのリアルタイムな体験を実装することができるようになります。
+Realtimely makes it easy to introduce fun real-time elements into your React app.
+Behind the scenes of Realtimely, GraphQL and Websocket communicate with the cloud, but users can implement a websocket-based real-time experience simply by using the hooks function provided by Realtimely without being aware of it.
 
 ## For Example
 ![demo](/img/realtime-cursor.gif)
 
-最もシンプルで分かりやすいのが「Realtime Cursor」です。
-Realtimelyが提供する`useRealtimeCursor`を使って以下のようなコンポーネントを作成するだけで、あなたのWebアプリを利用する全ての人のマウスカーソルの動きをリアルタイムに共有できるようになります。
+The simplest and most straightforward is the "Realtime Cursor".
+Simply create the following components using the `useRealtimeCursor` provided by Realtimely, and you will be able to share the movement of the mouse cursor of everyone who uses your web application in real time.
 
 ```tsx
 import { useRealtimeCursor } from 'realtimely';
@@ -29,7 +29,7 @@ export default () => {
 
 
 ## What you can do
-Realtimelyは`useRealtimeUserAction`というより使いやすくて応用範囲の広い関数も用意しています。以下のシンプルなコードをご覧ください。
+Realtimely also provides a function called `useRealtimeUserAction` that is easier to use and has a wider range of applications. See the simple code below.
 
 ```tsx
 import { useRealtimeUserAction } from 'realtimely';
@@ -43,8 +43,8 @@ export default () => {
 }
 ```
 
-`useRealtimeUserAction`メソッドを呼び出すとユーザアクションの監視を開始します。
-`pushUserAction`メソッドで何かしらの値を引数に実行すると、その値を同じURLを閲覧している全てのユーザの`userActionList`に配信します。
+Calling the `useRealtimeUserAction` method will start monitoring user actions.
+If you execute some value as an argument with the `pushUserAction` method, that value will be delivered to the `userActionList` of all users viewing the same URL.
 
-ただこれだけの機能で、チャットシステムやプレゼンス機能など、様々な機能を実装できます。
-あなたのサイトをより生き生きとさせるようなリアルタイムで面白い要素を是非作ってみてください。
+With just this function, you can implement various functions such as chat system and presence function.
+Please try to create interesting elements in real time that will make your site more lively.

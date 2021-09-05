@@ -4,4 +4,4 @@ sidebar_position: 5
 
 # Road Maps
 
-現在明確なロードマップはありません
+There is currently no clear roadmap

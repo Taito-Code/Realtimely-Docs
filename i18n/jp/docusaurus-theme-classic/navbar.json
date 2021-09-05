@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Realtimely",
+    "description": "The title in the navbar"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Example": {
+    "message": "Example",
+    "description": "Navbar item with label Example"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.npm": {
+    "message": "npm",
+    "description": "Navbar item with label npm"
+  }
+}

@@ -3,8 +3,8 @@ sidebar_position: 2
 ---
 
 # Demo
-Realtimelyでどのようなことが実現できるかexampleを確認できます。
+You can see an example of what Realtimely can do.
 
 **[Realtimely Demo](https://d2vfno2gco8009.cloudfront.net/)**
 
-多人数が利用しないと他の人の行動が見れないですが、一人でも別のブラウザで同時に開くことで動作を確認できます。
+You cannot see the behavior of other people unless it is used by multiple people, but you can check the operation by opening it in another browser at the same time.

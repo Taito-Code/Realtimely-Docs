@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import Translate, { translate } from '@docusaurus/Translate';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -17,7 +18,13 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Realtimely Tutorial - 1min ⏱️
+            <Translate
+              id="homepage.tutorial"
+              description="The homepage message to ask the user to visit tutorial"
+            >
+              Realtimely Tutorial - 1min ⏱️
+            </Translate>
+
           </Link>
         </div>
       </div>

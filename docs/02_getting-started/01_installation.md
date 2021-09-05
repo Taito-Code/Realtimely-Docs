@@ -5,7 +5,7 @@ sidebar_position: 1
 # Installation
 :::caution
 
-RealtimelyはまだProduction Readyなプロダクトではありません。リアルタイム要素をアプリケーションに取り入れる効果を確認するためのPoCとしてご利用ください。
+Realtimely is not yet a Production Ready product. Use it as a PoC to see the effect of incorporating real-time elements into your application.
 
 :::
 

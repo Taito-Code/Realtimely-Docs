@@ -6,8 +6,8 @@ sidebar_position: 3
 ![demo](/img/realtime-cursor.gif)
 
 ## Example
-Call `useRealtimeCursor` on the element that covers the full screen in your React app.
-Pass the return value `onMouseMove` to the element's onMouseMove event and call the` renderCursors` method in the HTML anywhere.
+あなたのReactアプリで全画面をカバーしている要素で、`useRealtimeCursor`を呼び出します。
+返り値の`onMouseMove`をその要素のonMouseMoveイベントに渡し、どこでも良いので`renderCursors`メソッドをHTML内で呼び出します。
 
 ```tsx title="App.tsx"
 import React from 'react';

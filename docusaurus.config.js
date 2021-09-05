@@ -10,7 +10,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   baseUrl: '/Realtimely/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'KitaharaMugiro', // Usually your GitHub org/user name.
   projectName: 'Realtimely', // Usually your repo name.
 
@@ -41,7 +41,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         title: 'Realtimely',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
@@ -65,6 +65,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             href: 'https://www.npmjs.com/package/realtimely',
             label: 'npm',
             position: 'right',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'left',
           },
         ],
       },
@@ -106,4 +110,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         darkTheme: darkCodeTheme,
       },
     }),
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'jp'],
+  },
 });

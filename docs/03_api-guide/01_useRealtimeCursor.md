@@ -3,27 +3,27 @@ sidebar_position: 1
 ---
 
 # useRealtimeCursor
-本メソッドが実施することは以下になります
+What this method does is:
 
-* マウスの動きを監視し、clientX, clinentYをstateに保存する
-* 500msのインターバルで、URL, clientX, clientY, ユーザ情報(ランダムに振られた名前、アバター、色)をサーバに送ります
-* WebSocketでサーバ上で同一のURLに該当する他のユーザの情報が追加された場合、それを取得します
-* 他のユーザのまとめてリストで保持し、画面上に描画する関数を定義します
+* Monitor mouse movement and save clientX and clinentY in state
+* Send URL, clientX, clientY, user information (randomly assigned name, avatar, color) to the server at intervals of 500ms
+* If the information of another user corresponding to the same URL is added on the server by WebSocket, it will be acquired.
+* Define a function that keeps other users together in a list and draws it on the screen
 
-本メソッドは２つの関数を返します。
+This method returns two functions.
 * `onMouseMove`
 * `renderCursors`
 
 ## onMouseMove
-この関数はマウスイベントを処理する関数になっています。
-全画面をカバーしているルートに近い要素にonMouseMoveに当ててください。
+This function is a function that handles mouse events.
+Apply onMouseMove to the element close to the root that covers the full screen.
 
 ```tsx
 <div onMouseMove={onMouseMove}>
 ```
 
 ## renderCursors
-リアルタイムに取得したマウスの位置情報とユーザ情報(ランダムに振られた名前、アバター、色)を描画する関数になっています。
+It is a function that draws mouse position information and user information (randomly assigned names, avatars, colors) acquired in real time.
 
 ```tsx
 return (
@@ -33,7 +33,7 @@ return (
 );
 ```
 
-`renderCursors`の引数にカーソルのカスタムビューを生成する関数を入れることができます。
+You can put a function that creates a custom view of the cursor in the argument of `renderCursors`.
 
 ```tsx
 const customView = (param: CustomCursorViewParameter) => {
@@ -48,8 +48,8 @@ return (
 ```
 
 ## delete time
-ユーザがオフラインになると、サーバへデータが送られなくなります。
-各データにはサーバで振り分けたdelete timeが設定されており、`useRealtimeCursor`ではdelete timeを超えたデータは取り除きます。
-delete timeは１０秒で固定しております。
-この設定値を変えたい場合は、[自分でバックエンドを構築する](/how-it-works/self-backend)を参照ください。
 
+When the user goes offline, no data is sent to the server.
+The delete time assigned by the server is set for each data, and `useRealtimeCursor` removes the data that exceeds the delete time.
+The delete time is fixed at 10 seconds.
+If you want to change this setting, see [Build your own backend](/docs/how-it-works/self-backend).
