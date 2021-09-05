@@ -6,11 +6,11 @@ sidebar_position: 4
 ![demo](/img/realtime-header.gif)
 
 ## Example
-Just call the `useOnlineUsers` function to start monitoring the list of users who are viewing the URL (including the path), and when it is updated, it will be reflected in the onlineUserList.
+Just call the `useOnlineUsers` function to start monitoring the list of users who are viewing the URL (including the path), and when it is updated, it will be reflected in the onlineUserList automatically.
 
 ```tsx title="header.tsx"
 import UserList from "./UserList";
-import { useOnlineUsers } from '../src';
+import { useOnlineUsers } from 'realtimely';
 
 export default () => {
     const { onlineUserList } = useOnlineUsers()

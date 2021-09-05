@@ -12,5 +12,5 @@ RealtimelyはProductionで使えるようにするために多くの課題を残
 これについては需要に応じてどちらを優先するか検討しようと思っています。
 
 # Donation
-Realtimely expansion will be accelerated by user demand and financial support.
-If you like it even a little, please donate.
+Realtimelyの開発はユーザの需要と金銭的サポートによって加速します。
+もし少しでも気に入っていただけましたら、寄付をお願いします。

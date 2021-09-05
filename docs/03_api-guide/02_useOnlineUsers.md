@@ -3,13 +3,13 @@ sidebar_position: 2
 ---
 
 # useOnlineUsers
-What this method does is:
+This method does :
 
 * Send URL, user information (randomly assigned name, avatar, color) to the server at intervals of 5000ms
-* If the information of another user corresponding to the same URL is added on the server by WebSocket, it will be acquired.
+* Fetch data by Websocket If the information of another user corresponding to the same URL is added on the server.
 * Keeps other users' information together in a list
 
-This method returns one function.
+This method returns one variable.
 * `onlineUserList`
 
 ## onlineUserList
@@ -25,13 +25,13 @@ This method returns one function.
 }
 ```
 
-key is a unique value for each user
-name, avator, color are random values determined by the user.
+key is a unique value for each user.
+The name, avator, color are random values determined by the user.
 deleteTime will be the future time set on the server.
 
 ## delete time
 
-When the user goes offline, no data is sent to the server.
-The delete time assigned by the server is set for each data, and `useRealtimeCursor` removes the data that exceeds the delete time.
+When the user goes offline, no data will be sent to the server.
+The delete time assigned by the server is set for each data, and `useOnlineUsers` removes the data that exceeds the delete time.
 The delete time is fixed at 10 seconds.
-If you want to change this setting, see [Build your own backend](/docs/how-it-works/self-backend).
+If you want to change this setting, see [Self hosted backend](/docs/how-it-works/self-backend).

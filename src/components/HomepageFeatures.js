@@ -31,7 +31,7 @@ const FeatureList = [
         <Translate
           id="homepage.feature2"
         >
-          You can use the Realtimely backend out-of-the-box, so you don't have to build any difficult backends.
+          You can use the Realtimely backend, so you don't have to build any difficult backends.
         </Translate>
       </>
     ),
@@ -46,7 +46,7 @@ const FeatureList = [
         <Translate
           id="homepage.feature3"
         >
-          Realtimely is based on GraphQL and Websocket, but users of Realtimely can use it without worrying about the technology behind it.
+          Realtimely is based on GraphQL and Websocket, but users of Realtimely can use Realtimely API without aware of these technology.
         </Translate>
       </>
     ),

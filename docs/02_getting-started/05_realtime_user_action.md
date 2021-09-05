@@ -29,4 +29,4 @@ export default () => {
 }
 ```
 
-User action monitoring is started by passing the callback function to the argument of `useRealtimeUserAction` and executing it. By executing the return value `pushUserAction` each time the button is pressed, an event is issued and the callback function is executed. Therefore, you can see that the number of the pressed button is output as standard in console.log.
+User action monitoring is started by passing the callback function to the argument of `useRealtimeUserAction` and executing it. By executing the return value `pushUserAction` each time the button is pressed, an event is issued and the callback function is executed. Therefore, you can see that the number of the pressed button in console logs.
