@@ -1,10 +1,10 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 # Realtime User Action
 
-最後にもっとも柔軟で有用な関数`useRealtimeUserAction`を紹介します。
+もっとも柔軟で有用な関数`useRealtimeUserAction`を紹介します。
 
 ```tsx
 export default () => {

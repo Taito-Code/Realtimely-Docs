@@ -4,9 +4,8 @@ sidebar_position: 5
 
 # Realtime Shared State
 
-Realtimely provides `useRealtimeSharedState`, an evolution of React's `useState`.
-It synchronizes the state of all users who are viewing the same URL.
-
+RealtimelyはReactの`useState`を進化させた`useRealtimeSharedState`を提供します。
+これは、同一のURLを見ているすべてのユーザのstateを同期させます。
 
 ```tsx
 export default () => {
